@@ -346,8 +346,8 @@ button {
      text-align: left;
      max-width: 561px;
      width: 100%;
-     float: right;
      padding-right: 141px;
+     padding-left: 9%;
 }
 
 .text-bg h1 {
@@ -980,4 +980,36 @@ border-bottom: 1px solid #999; */
         margin-top: 40px;
         margin-bottom: 20px;
     }
+}
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+     padding-right: 5%;
+}
+   
+.dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+     z-index: 1;
+}
+
+.dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown:hover .dropdown-content {
+     display: block;
+}
+
+.dropbtn {
+     background-color: transparent;
+     color: black;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
 }

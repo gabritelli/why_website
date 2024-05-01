@@ -123,6 +123,12 @@
 }
 
 @media (max-width: 575px) {
+
+    .mobile-div {
+        background-color: white;
+        padding: 0;
+    }
+
     .head_top {
         background: #0891f8;
     }
@@ -153,7 +159,7 @@
         line-height: 28px;
     }
     .banner_main {
-        padding: 50px 0;
+        padding: 0 0;
     }
     .projects::after {
         background: transparent;
@@ -194,12 +200,13 @@
     .navigation .navbar-collapse {
         background: #fff;
         padding: 20px;
-        margin-top: 46px;
-        position: absolute;
+        margin-top: 76px;
+        position: relative;
         width: 100%;
         margin-right: 20px;
         z-index: 999;
     }
+
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         color: #000;
@@ -208,6 +215,7 @@
         float: right;
         margin-right: 2px;
         border: inherit;
+        padding-top: 12%;
     }
     .testimonial_box {
         padding: 0px 19px 40px 20px;
