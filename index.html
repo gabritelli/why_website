@@ -178,7 +178,7 @@
                      <div class="face back-face">
                            <span class="fas fa-quote-left"></span>
                            <div class="testimonial cossu_story">
-                              Ho iniziato la mia carriera commerciale come un "Uomo di strada", fissando appuntamenti e cercando di ottenere ordini. Questa esperienza mi ha forgiato. Successivamente, ho lavorato per 20 anni come Dirigente Commerciale in varie aziende del settore Consumer/DIY. Questo mi ha permesso di lavorare in team, crescere e comprendere l'importanza della condivisione e della responsabilità. Nonostante abbia superato i 60 anni, ho deciso di intraprendere un nuovo percorso con i miei amici e colleghi più stretti, basato sul nostro amore per il lavoro. Le mie competenze principali sono: 1. OEM Business; 2. Distribuzione DIY Worldwide; 3. License Business.
+                              Ha iniziato la sua carriera commerciale come "self-made man", fissando appuntamenti e cercando di ottenere ordini. Questa esperienza lo ha forgiato. Successivamente, ha lavorato per 20 anni come Dirigente Commerciale in varie aziende del settore Consumer/DIY. Questo gli ha permesso di lavorare in team, crescere e comprendere l'importanza della condivisione e della responsabilità. Nonostante abbia superato i 60 anni, ha deciso di intraprendere un nuovo percorso con i suoi amici e colleghi più stretti, basato sul loro amore per il lavoro. Le sue competenze principali sono: 1. OEM Business; 2. Distribuzione DIY Worldwide; 3. License Business.
                            </div>
                            <span class="fas fa-quote-right"></span>
                      </div>
@@ -343,18 +343,21 @@
 
       <script>
          $(document).ready(function() {
+         // Check if the screen size is less than or equal to 768px
+         if ($(window).width() <= 768) {
             $(document).click(function(event) {
-               var clickover = $(event.target);
-               var _opened = $(".navbar-collapse").hasClass("show");
-               if (_opened === true && !clickover.hasClass("navbar-toggler") && !clickover.hasClass("dropbtn")) {
-                  $(".navbar-toggler").click();
-               }
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler") && !clickover.hasClass("dropbtn")) {
+               $(".navbar-toggler").click();
+            }
             });
-         
+
             $(".dropbtn").click(function(event) {
-               event.stopPropagation();
-               $(".navbar-collapse").css('height', '260px');
+            event.stopPropagation();
+            $(".navbar-collapse").css('height', '260px');
             });
+         }
          });
       </script>
       
